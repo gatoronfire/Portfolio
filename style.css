@@ -18,6 +18,12 @@ body {
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
 }
+.error{
+    color: red;
+}
+form>div.show>p{
+    width: 100%;
+}
 
 @media screen and (min-width:400px) {
     header {
@@ -91,12 +97,11 @@ body {
     }
 
     div#work {
-        background-color: #01161E;
-
+        background-color: #E13D71;
     }
 
     div#contact {
-        background-color: #E13D71;
+        background-color: #01161E;
         padding: 0;
         display: flex;
         flex-direction: row;
@@ -211,12 +216,12 @@ body {
     }
 
     div#work {
-        background-color: #01161E;
+        background-color: #E13D71;
 
     }
 
     div#contact {
-        background-color: #E13D71;
+        background-color: #01161E;
         padding: 0;
         display: flex;
         flex-direction: column;
