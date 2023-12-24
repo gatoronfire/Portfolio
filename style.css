@@ -227,7 +227,7 @@ form>div.show>p{
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        height: 150%;
+        height: 100%;
     }
 
     #contact form {
