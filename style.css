@@ -129,7 +129,7 @@ body {
     }
 
 }
-@media screen and (min-width:400px) {
+@media screen and (max-width:400px) {
     header {
         height: 7.353vw;
         width: 100%;
