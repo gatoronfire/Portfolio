@@ -78,7 +78,7 @@ form>div.show>p{
         justify-content: center;
         align-items: flex-start;
         padding-left: 9.706vw;
-        scroll-snap-align: end;
+        scroll-snap-align: bottom;
     }
 
     div.main h1 {
