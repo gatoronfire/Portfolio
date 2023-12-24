@@ -127,6 +127,14 @@ body {
         opacity: 65%;
         margin: 15px 0;
     }
+    form button{
+        background-color: #59CD90;
+        width: 40%;
+        height: 5.956vw;
+        border: none;
+        color: white;
+        margin: auto;
+    }
 
 }
 @media screen and (max-width:400px) {
@@ -214,6 +222,7 @@ body {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
+        height: 150%;
     }
 
     #contact form {
@@ -239,6 +248,17 @@ body {
         background-color: white;
         opacity: 65%;
         margin: 15px 0;
+    }
+    form button{
+        background-color: #59CD90;
+        width: 50%;
+        height: 12vw;
+        min-height: 40px;
+        border: none;
+        align-self: center;
+        color: white;
+        font-size: large;
+        font-weight: 600;
     }
 
 }
