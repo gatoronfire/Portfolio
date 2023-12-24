@@ -195,7 +195,7 @@ form>div.show>p{
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        scroll-snap-align: center;
+        scroll-snap-align: end;
     }
     div.main div{
         padding-left: 9.706vw;
