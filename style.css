@@ -16,6 +16,8 @@ html,body{
     scroll-behavior: smooth;
 }
 
+@media screen and min-width(300px){
+
 header{
     height: 100px;
     width: 100%;
@@ -108,4 +110,5 @@ textarea{
     background-color: white;
     opacity: 65%;
     margin: 15px 0;
+}
 }
