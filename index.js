@@ -18,7 +18,7 @@ function GetData() {
                 inputs.forEach(input => {
                     input.classList.add('error')
                 });
-                messageContainer.classList.add('error', 'show')
+                messageContainer.classList.add('error')
                 messageContainer.innerHTML = text;
                 return;
             }
@@ -46,7 +46,6 @@ function GetData() {
             }).then(
                 message => send =message
             );
-            console.log(send)
 
             if(send == undefined){
                 let text = "";
@@ -56,6 +55,7 @@ function GetData() {
                     inputs.forEach(input => {
                     input.classList.add('success')
                     });
+                    messageContainer.classList.add('success');
                     messageContainer.innerHTML = text;
             }
             

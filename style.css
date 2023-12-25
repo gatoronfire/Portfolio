@@ -23,10 +23,10 @@ body {
 }
 .success{
     color: green;
-    text-align: center;
 }
 .container{
     text-align: center;
+    margin-bottom: 5vw;
 }
 form>div.show>p{
     width: 100%;
@@ -172,12 +172,11 @@ form>div.show>p{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin-top: 1.611vw;
     }
 
     header img {
         width: auto;
-        height: 7vw;
+        height: 10vw;
         margin: 0 1.618vw;
     }
 
@@ -203,17 +202,20 @@ form>div.show>p{
         justify-content: center;
         align-items: flex-start;
         scroll-snap-align: center;
+
     }
     
     div.main h1 {
         font-size: 12vw;
         font-weight: black;
+        margin-left: 5vw;
     }
 
     div.main p {
         font-size: 5vw;
         font-weight: 600;
-        width: 72.647vw;
+        width: 90vw;
+        margin-left: 5vw;
     }
 
     div#about {
@@ -234,6 +236,11 @@ form>div.show>p{
         align-items: center;
         height: 100%;
     }
+    #contact h1, #contact p{
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
 
     #contact form {
         height: 50%;
@@ -247,18 +254,17 @@ form>div.show>p{
         width: 100%;
         min-height: 40px;
         height: 12vw ;
-        border: none;
-        background-color: white;
-        opacity: 65%;
-        margin: 15px 0;
     }
 
     textarea {
+        min-height: 100px;
+    }
+    input, textarea{
         border: none;
         background-color: white;
         opacity: 65%;
         margin: 15px 0;
-        min-height: 100px;
+        padding: 5px;
     }
     form button{
         background-color: #59CD90;
