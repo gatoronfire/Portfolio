@@ -21,7 +21,7 @@ body {
 .error{
     color: red;
 }
-.success, .container{
+.success{
     color: green;
     text-align: center;
 }
