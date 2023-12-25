@@ -21,8 +21,9 @@ body {
 .error{
     color: red;
 }
-.success{
+.success, .container{
     color: green;
+    text-align: center;
 }
 form>div.show>p{
     width: 100%;
@@ -200,9 +201,7 @@ form>div.show>p{
         align-items: flex-start;
         scroll-snap-align: center;
     }
-    div.main div{
-        padding-left: 9.706vw;
-    }
+    
     div.main h1 {
         font-size: 12vw;
         font-weight: black;
