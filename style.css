@@ -21,6 +21,9 @@ body {
 .error{
     color: red;
 }
+.success{
+    color: green;
+}
 form>div.show>p{
     width: 100%;
 }
@@ -253,6 +256,7 @@ form>div.show>p{
         background-color: white;
         opacity: 65%;
         margin: 15px 0;
+        min-height: 100px;
     }
     form button{
         background-color: #59CD90;
