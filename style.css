@@ -16,7 +16,7 @@ body {
     width: 100%;
     height: 100%;
     scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 }
 .error{
     color: red;
@@ -26,7 +26,7 @@ body {
 }
 .container{
     text-align: center;
-    margin-bottom: 5vw;
+    margin-bottom: 2.5vw;
 }
 form>div.show>p{
     width: 100%;
@@ -54,7 +54,6 @@ form>div.show>p{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin-top: 1.611vw;
     }
 
     header img {
@@ -85,7 +84,7 @@ form>div.show>p{
         justify-content: center;
         align-items: flex-start;
         padding-left: 9.706vw;
-        scroll-snap-align: bottom;
+        scroll-snap-align: start;
     }
 
     div.main h1 {
@@ -94,9 +93,9 @@ form>div.show>p{
     }
 
     div.main p {
-        font-size: 2.353vw;
+        font-size: 1.5vw;
         font-weight: 600;
-        width: 72.647vw;
+        width: 100%;
     }
 
     div#about {
@@ -122,15 +121,18 @@ form>div.show>p{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        
     }
 
     form input {
         width: 100%;
+        min-height: 30px;
         height: 5.956vw;
         border: none;
         background-color: white;
         opacity: 65%;
         margin: 15px 0;
+        padding: 5px;
     }
 
     textarea {
@@ -138,6 +140,8 @@ form>div.show>p{
         background-color: white;
         opacity: 65%;
         margin: 15px 0;
+        min-height: 90px;
+        padding: 5px;
     }
     form button{
         background-color: #59CD90;
@@ -146,6 +150,7 @@ form>div.show>p{
         border: none;
         color: white;
         margin: auto;
+        min-height: 40px;
     }
 
 }
@@ -177,7 +182,7 @@ form>div.show>p{
     header img {
         width: auto;
         height: 10vw;
-        margin: 0 1.618vw;
+        
     }
 
     header ol {
@@ -187,6 +192,7 @@ form>div.show>p{
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        margin: auto;
     }
 
     header ol li {
@@ -201,7 +207,7 @@ form>div.show>p{
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        scroll-snap-align: center;
+        scroll-snap-align: start;
 
     }
     
@@ -224,10 +230,9 @@ form>div.show>p{
 
     div#work {
         background-color: #E13D71;
-
     }
 
-    div#contact {
+    div#contact.main {
         background-color: #01161E;
         padding: 0;
         display: flex;
@@ -235,6 +240,8 @@ form>div.show>p{
         justify-content: space-evenly;
         align-items: center;
         height: 100%;
+        scroll-snap-align: end;
+        
     }
     #contact h1, #contact p{
         margin: 0;
@@ -248,6 +255,7 @@ form>div.show>p{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        
     }
 
     form input {
@@ -257,7 +265,12 @@ form>div.show>p{
     }
 
     textarea {
-        min-height: 100px;
+        width: 100%;
+    min-height: 100px;
+    border: none;
+    background-color: white;
+    opacity: 65%;
+    padding: 5px;
     }
     input, textarea{
         border: none;

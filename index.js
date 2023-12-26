@@ -40,24 +40,24 @@ function GetData() {
                 Username: "diego.casas11104@gmail.com",
                 Password: "418FDD9C8EC3144649615F92D8466DD0339D",
                 To: 'diego.casas11104@gmail.com',
-                From: mail,
+                From: 'diego.casas11104@gmail.com',
                 Subject: "Portfolio contact",
-                Body: message,
+                Body:'name: ' + name + "\n" + 'email: ' + mail + "\n" + message,
             }).then(
-                message => send =message
+                message => console.log(message)
             );
 
-            if(send == undefined){
-                let text = "";
-                    text += `
-                            <p>The mail has been send succesfully</p>
-                        `
-                    inputs.forEach(input => {
-                    input.classList.add('success')
-                    });
-                    messageContainer.classList.add('success');
-                    messageContainer.innerHTML = text;
-            }
+            // if(send == undefined){
+            //     let text = "";
+            //         text += `
+            //                 <p>The mail has been send succesfully</p>
+            //             `
+            //         inputs.forEach(input => {
+            //         input.classList.add('success')
+            //         });
+            //         messageContainer.classList.add('success');
+            //         messageContainer.innerHTML = text;
+            // }
             
         })
     }
