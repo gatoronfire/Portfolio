@@ -219,6 +219,7 @@ body > header > div > img{
         align-items: flex-start;
         scroll-snap-align: start end;
         scroll-padding: 0;
+        scroll-snap-stop: always;
 
     }
     
