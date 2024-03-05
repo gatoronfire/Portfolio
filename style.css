@@ -45,9 +45,10 @@ form>div.show>p{
         font-family: 'Armata', sans-serif;
     }
     header>div{
-        position: absolute;
-        float: left;
+        width: 100%;
+        justify-content: flex-start!important;
         height: 100%;
+        position: absolute;
     }
 
     header a {
