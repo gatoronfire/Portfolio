@@ -218,6 +218,7 @@ body > header > div > img{
         justify-content: center;
         align-items: flex-start;
         scroll-snap-align: start end;
+        scroll-padding: 0;
 
     }
     
@@ -250,7 +251,7 @@ body > header > div > img{
         justify-content: space-evenly;
         align-items: center;
         height: 100vh;
-        scroll-snap-align: end;
+        scroll-snap-align: end!important;
         padding-top: 70px;
         
     }
