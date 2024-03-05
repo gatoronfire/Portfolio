@@ -44,6 +44,11 @@ form>div.show>p{
         color: white;
         font-family: 'Armata', sans-serif;
     }
+    header>div{
+        position: absolute;
+        float: left;
+        height: 100%;
+    }
 
     header a {
         color: white;
