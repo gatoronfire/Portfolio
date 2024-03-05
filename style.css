@@ -217,7 +217,7 @@ body > header > div > img{
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        scroll-snap-align: start;
+        scroll-snap-align: start end;
 
     }
     
