@@ -1,8 +1,13 @@
 
+const submit = document.getElementById("button");
+var sended = 0;
 function GetData() {
-    const submit = document.getElementById("button");
     if (submit) {
         submit.addEventListener('click', e => {
+            if(sended !=0){
+                return;
+            }
+            sended++;
             e.preventDefault();
             let name = document.getElementById('name').value;
             let mail = document.getElementById('mail').value;
@@ -45,20 +50,21 @@ function GetData() {
                 Body:'name: ' + name + "\n" + 'email: ' + mail + "\n" + message,
             }).then(
                 message => console.log(message)
+                
             );
 
-            // if(send == undefined){
-            //     let text = "";
-            //         text += `
-            //                 <p>The mail has been send succesfully</p>
-            //             `
-            //         inputs.forEach(input => {
-            //         input.classList.add('success')
-            //         });
-            //         messageContainer.classList.add('success');
-            //         messageContainer.innerHTML = text;
-            // }
-            
+            if(send == undefined){
+                let text = "";
+                    text += `
+                            <p>The mail has been send succesfully</p>
+                        `
+                    inputs.forEach(input => {
+                    input.classList.add('success')
+                    });
+                    messageContainer.classList.add('success');
+                    messageContainer.innerHTML = text;
+            }
+            console.log(e);
         })
     }
 }
