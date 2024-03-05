@@ -31,6 +31,9 @@ body {
 form>div.show>p{
     width: 100%;
 }
+body > header > div > img{
+    filter: invert();
+}
 
 @media screen and (min-width:600px) {
     header {
