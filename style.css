@@ -251,6 +251,7 @@ body > header > div > img{
         align-items: center;
         height: 100vh;
         scroll-snap-align: end;
+        padding-top: 70px;
         
     }
     #contact h1, #contact p{
