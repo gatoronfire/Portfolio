@@ -252,7 +252,7 @@ body > header > div > img{
         justify-content: space-evenly;
         align-items: center;
         height: 100vh;
-        scroll-snap-align: end!important;
+        /* scroll-snap-align: end!important; */
         padding-top: 70px;
         
     }
