@@ -58,6 +58,7 @@ body > header > div > img{
     header a {
         color: white;
         text-decoration: none;
+        z-index: 20;
     }
 
     header div {
@@ -172,7 +173,7 @@ body > header > div > img{
         flex-direction: row-reverse;
         position: fixed;
         align-items: center;
-        font-size: 4vw;
+        font-size: 3vw;
         color: white;
         font-family: 'Armata', sans-serif;
         margin-top: 3vw;
