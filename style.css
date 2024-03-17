@@ -177,6 +177,7 @@ body > header > div > img{
         color: white;
         font-family: 'Armata', sans-serif;
         margin-top: 3vw;
+        z-index: 20;
     }
 
     header a {
