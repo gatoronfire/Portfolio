@@ -193,12 +193,12 @@ body > header > div > img{
     header img {
         width: auto;
         height: 10vw;
-        
+        filter: invert(1);
     }
 
     header ol {
         list-style: none;
-        width: fit-content;
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -206,8 +206,11 @@ body > header > div > img{
         margin: auto;
     }
 
-    header ol li {
-        margin: 1rem;
+    header ol li a {
+        width: 100%;
+    }
+    body > header > ol > li:nth-child(1) > img{
+        filter: invert(1);
     }
 
     div.main {
