@@ -35,7 +35,7 @@ body > header > div > img{
 
 @media screen and (min-width:600px) {
     header {
-        height: 7.353vw;
+        height: 5.353vw;
         width: 100%;
         display: flex;
         flex-direction: row-reverse;
@@ -57,6 +57,7 @@ body > header > div > img{
         color: white;
         text-decoration: none;
         z-index: 20;
+        height: 100%;
     }
 
     header div {
@@ -73,7 +74,8 @@ body > header > div > img{
 
     header ol {
         list-style: none;
-        width: fit-content;
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -82,8 +84,20 @@ body > header > div > img{
     }
 
     header ol li {
-        margin: 1.6rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
     }
+    header ol li > img, header ol li a >img{
+        height: 70%;
+        filter: invert(1);
+    }
+    header ol li a{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+  
 
     div.main {
         width: 100%;
