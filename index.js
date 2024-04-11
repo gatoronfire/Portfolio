@@ -46,7 +46,7 @@ function GetData() {
                 Password: "418FDD9C8EC3144649615F92D8466DD0339D",
                 To: 'diego.casas11104@gmail.com',
                 From: 'diego.casas11104@gmail.com',
-                Subject: "Portfolio contact",
+                Subject: "NetType contact",
                 Body:'name: ' + name + "\n" + 'email: ' + mail + "\n" + message,
             }).then(
                 message => console.log(message)
@@ -56,7 +56,7 @@ function GetData() {
             if(send == undefined){
                 let text = "";
                     text += `
-                            <p>The mail has been send succesfully</p>
+                            <p>El mail se envio correctamente</p>
                         `
                     inputs.forEach(input => {
                     input.classList.add('success')
