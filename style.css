@@ -33,6 +33,10 @@ body > header > div > img{
     filter: invert();
 }
 
+div.main h1 b {
+    color: #ff436c;
+}
+
 @media screen and (min-width:600px) {
     header {
         height: 5.353vw;
@@ -112,14 +116,22 @@ body > header > div > img{
     }
 
     div.main h1 {
-        font-size: 4.706vw;
+        font-size: 3rem;
         font-weight: black;
+        text-transform: uppercase;
+    }
+
+    
+
+    #about > div{
+        width: 1100px;
     }
 
     div.main p {
-        font-size: 1.5vw;
+        font-size: 1.5rem;
         font-weight: 600;
         width: 100%;
+        margin-top: 1rem;
     }
 
     div#about {
