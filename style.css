@@ -254,7 +254,7 @@ div.main h1 b {
     }
     
     div.main h1 {
-        font-size: 12vw;
+        font-size: 11vw;
         font-weight: black;
         margin-left: 5vw;
     }
@@ -264,6 +264,8 @@ div.main h1 b {
         font-weight: 600;
         width: 90vw;
         margin-left: 5vw;
+        margin-top: 1rem;
+
     }
 
     div#about {
