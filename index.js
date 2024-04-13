@@ -1,5 +1,12 @@
 
 const submit = document.getElementById("button");
+
+function randNumFunc (){
+    var randNum = Math.floor(Math.random() * 900) + 1;
+    let txt = document.getElementById('num');
+    num.innerHTML = randNum;
+}
+randNumFunc();
 var sended = 0;
 function GetData() {
     if (submit) {
