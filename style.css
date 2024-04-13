@@ -269,7 +269,7 @@ div.main h1 b {
         width: 100vw;
         display: flex;
         flex-direction: row-reverse;
-        position: fixed;
+        position: absolute;
         align-items: center;
         font-size: 3vw;
         color: white;
