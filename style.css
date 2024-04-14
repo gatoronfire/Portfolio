@@ -264,248 +264,251 @@ div.main h1 b {
 
 }
 @media screen and (max-width:600px) {
-    header {
-        height: 7.353vw;
-        width: 100vw;
-        display: flex;
-        flex-direction: row-reverse;
-        position: absolute;
-        align-items: center;
-        font-size: 3vw;
-        color: white;
-        font-family: 'Armata', sans-serif;
-        margin-top: 3vw;
-        z-index: 20;
-    }
-
-    header a {
-        color: white;
-        text-decoration: none;
-    }
-
-    header div {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    header img {
-        width: auto;
-        height: 10vw;
-        filter: invert(1);
-    }
-
-    header ol {
-        list-style: none;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        margin: auto;
-    }
-
-    header ol li a {
-        width: 100%;
-    }
-    body > header > ol > li:nth-child(1) > img{
-        filter: invert(1);
-    }
-
-    div.main {
-        width: 100vw;
-        height: 100vh;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        /* scroll-snap-align: start end; */
-        scroll-padding: 0;
-        /* scroll-snap-stop: always; */
-
-    }
+    @media (prefers-color-scheme: dark){
+        header {
+            height: 7.353vw;
+            width: 100vw;
+            display: flex;
+            flex-direction: row-reverse;
+            position: absolute;
+            align-items: center;
+            font-size: 3vw;
+            color: white;
+            font-family: 'Armata', sans-serif;
+            margin-top: 3vw;
+            z-index: 20;
+        }
     
-    div.main h1 {
-        font-size: 11vw;
-        font-weight: black;
-        margin-left: 5vw;
-    }
-
-    div.main p {
-        font-size: 5vw;
-        font-weight: 600;
-        width: 90vw;
-        margin-left: 5vw;
-        margin-top: 1rem;
-
-    }
-
-    div#about {
-        background-color: #62BBC1;
-    }
-
-    div#work {
-        background-color: #E13D71;
-    }
-
-    div#contact.main {
-        background-color: #01161E;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        height: 100vh;
-        /* scroll-snap-align: end!important; */
-        padding-top: 70px;
+        header a {
+            color: white;
+            text-decoration: none;
+        }
+    
+        header div {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    
+        header img {
+            width: auto;
+            height: 10vw;
+            filter: invert(1);
+        }
+    
+        header ol {
+            list-style: none;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            margin: auto;
+        }
+    
+        header ol li a {
+            width: 100%;
+        }
+        body > header > ol > li:nth-child(1) > img{
+            filter: invert(1);
+        }
+    
+        div.main {
+            width: 100vw;
+            height: 100vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            /* scroll-snap-align: start end; */
+            scroll-padding: 0;
+            /* scroll-snap-stop: always; */
+    
+        }
         
-    }
-    #contact h1, #contact p{
-        margin: 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    #contact form {
-        height: 50%;
-        width: 70%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        
-    }
-
-    form input {
-        width: 100%;
-        min-height: 40px;
-        height: 12vw ;
-    }
-
-    textarea {
-        width: 100%;
-    min-height: 100px;
-    border: none;
-    background-color: white;
-    opacity: 65%;
-    padding: 5px;
-    }
-    input, textarea{
+        div.main h1 {
+            font-size: 11vw;
+            font-weight: black;
+            margin-left: 5vw;
+        }
+    
+        div.main p {
+            font-size: 5vw;
+            font-weight: 600;
+            width: 90vw;
+            margin-left: 5vw;
+            margin-top: 1rem;
+    
+        }
+    
+        div#about {
+            background-color: #62BBC1;
+        }
+    
+        div#work {
+            background-color: #E13D71;
+        }
+    
+        div#contact.main {
+            background-color: #01161E;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100vh;
+            /* scroll-snap-align: end!important; */
+            padding-top: 70px;
+            
+        }
+        #contact h1, #contact p{
+            margin: 0;
+            width: 100%;
+            text-align: center;
+        }
+    
+        #contact form {
+            height: 50%;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            
+        }
+    
+        form input {
+            width: 100%;
+            min-height: 40px;
+            height: 12vw ;
+        }
+    
+        textarea {
+            width: 100%;
+        min-height: 100px;
         border: none;
         background-color: white;
         opacity: 65%;
-        margin: 15px 0;
         padding: 5px;
+        }
+        input, textarea{
+            border: none;
+            background-color: white;
+            opacity: 65%;
+            margin: 15px 0;
+            padding: 5px;
+        }
+        form button{
+            background-color: #59CD90;
+            width: 50%;
+            height: 12vw;
+            min-height: 40px;
+            border: none;
+            align-self: center;
+            color: white;
+            font-size: large;
+            font-weight: 600;
+        }
+        .prev, .next{
+            font-size: 50px!important;
+            color: black!important;
+        }
+    
+        div.main#agitate{
+            min-height: 115vh;
+            height: fit-content;
+            background-color: #DBD56E ;
+            list-style: none;
+            padding: 0;
+        }
+        div.main#agitate p{
+            font-size: 1.3rem;
+            margin: auto;
+        }
+        div.main#agitate h1{
+            margin: 3rem 0;
+            text-transform: uppercase;
+            font-size: 2rem;
+        }
+        div.main#agitate section{
+            margin: auto;
+            text-align: center;
+        }
+        div.main#agitate section:nth-child(2){
+            max-width: 300px;
+            margin:auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #agit-data ol{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            text-align: center;
+            list-style: none;
+            justify-content: space-between;
+            margin: 3rem 0;
+        }
+        #agit-data ol li{
+            width: 100%;
+        }
+        #agit-data ol li h4{
+            font-size: xx-large;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        #agit-data ol li p{
+            font-size: large;
+            width: auto;
+        }
+        #solution{
+            min-height: 115vh;
+            height: fit-content;
+            background-color: #073B3A ;
+            list-style: none;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            
+        }
+        #solution h1{
+            margin: 0;
+        }
+        #solution section{
+            max-width: 300px;
+            text-align: center;
+            margin: 3rem auto;
+        }
+        #solution>section>ol{
+            display: flex;
+            flex-direction: column;
+            margin: 4rem auto;
+            list-style: none;
+            gap: 60px;
+        }
+        #solution>section>ol>li{
+            height: 300px;
+            padding: 1rem;
+            border: 3px solid rgb(255, 255, 255);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+    
+        }
+        #solution>section>ol>li>p{
+            width: auto;
+            margin: 0;
+        }
+        #solution>section>ol>li>h4{
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
     }
-    form button{
-        background-color: #59CD90;
-        width: 50%;
-        height: 12vw;
-        min-height: 40px;
-        border: none;
-        align-self: center;
-        color: white;
-        font-size: large;
-        font-weight: 600;
-    }
-    .prev, .next{
-        font-size: 50px!important;
-        color: black!important;
-    }
-
-    div.main#agitate{
-        min-height: 115vh;
-        height: fit-content;
-        background-color: #DBD56E ;
-        list-style: none;
-        padding: 0;
-    }
-    div.main#agitate p{
-        font-size: 1.3rem;
-        margin: auto;
-    }
-    div.main#agitate h1{
-        margin: 3rem 0;
-        text-transform: uppercase;
-        font-size: 2rem;
-    }
-    div.main#agitate section{
-        margin: auto;
-        text-align: center;
-    }
-    div.main#agitate section:nth-child(2){
-        max-width: 300px;
-        margin:auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    #agit-data ol{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
-        text-align: center;
-        list-style: none;
-        justify-content: space-between;
-        margin: 3rem 0;
-    }
-    #agit-data ol li{
-        width: 100%;
-    }
-    #agit-data ol li h4{
-        font-size: xx-large;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
-    #agit-data ol li p{
-        font-size: large;
-        width: auto;
-    }
-    #solution{
-        min-height: 115vh;
-        height: fit-content;
-        background-color: #073B3A ;
-        list-style: none;
-        padding: 0;
-        display: flex;
-        align-items: center;
-        
-    }
-    #solution h1{
-        margin: 0;
-    }
-    #solution section{
-        max-width: 300px;
-        text-align: center;
-        margin: 3rem auto;
-    }
-    #solution>section>ol{
-        display: flex;
-        flex-direction: column;
-        margin: 4rem auto;
-        list-style: none;
-        gap: 60px;
-    }
-    #solution>section>ol>li{
-        height: 300px;
-        padding: 1rem;
-        border: 3px solid rgb(255, 255, 255);
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-
-    }
-    #solution>section>ol>li>p{
-        width: auto;
-        margin: 0;
-    }
-    #solution>section>ol>li>h4{
-        font-size: 2rem;
-        text-transform: uppercase;
-    }
+    
 
 }
 /* carroulse */
