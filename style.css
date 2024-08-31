@@ -111,7 +111,6 @@ div.main h1 b {
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        padding-left: 9.706vw;
         scroll-snap-align: start;
     }
 
@@ -125,6 +124,7 @@ div.main h1 b {
 
     #about > div{
         width: 1100px;
+        margin: auto;
     }
 
     div.main p {
@@ -140,7 +140,89 @@ div.main h1 b {
 
     div#work {
         background-color: #E13D71;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+
+
+
+    /* slider */
+    #slider {
+        position: relative;
+        overflow: hidden;
+        margin: 20px auto 0 auto;
+        border-radius: 4px;
+      }
+      
+      #slider ul {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        height: 200px;
+        list-style: none;
+      }
+      
+      #slider ul li {
+        position: relative;
+        display: block;
+        float: left;
+        margin: 0;
+        padding: 0;
+        width: 662px;
+        height: 295px;
+        background: #ccc;
+        text-align: center;
+        line-height: 300px;
+      }
+      #slider ul li a img{
+        position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%; /* Asegura que la imagen llene el ancho del contenedor */
+            height: auto; /* Mantiene la proporción de la imagen */
+            max-height: 100%; 
+      }
+      
+      a.control_prev, a.control_next {
+        position: absolute;
+        top: 40%;
+        z-index: 999;
+        display: block;
+        padding: 4% 3%;
+        width: auto;
+        height: auto;
+        background: #2a2a2a;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 18px;
+        opacity: 0.8;
+        cursor: pointer;
+      }
+      
+      a.control_prev:hover, a.control_next:hover {
+        opacity: 1;
+        -webkit-transition: all 0.2s ease;
+      }
+      
+      a.control_prev {
+        border-radius: 0 2px 2px 0;
+      }
+      
+      a.control_next {
+        right: 0;
+        border-radius: 2px 0 0 2px;
+      }
+      
+      .slider_option {
+        position: relative;
+        margin: 10px auto;
+        width: 160px;
+        font-size: 18px;
+      }
+
 
     div#contact {
         background-color: #01161E;
@@ -260,6 +342,8 @@ div.main h1 b {
         font-size: 2rem;
         text-transform: uppercase;
     }
+
+    
     
 
 }
@@ -348,6 +432,9 @@ div.main h1 b {
 
     div#work {
         background-color: #E13D71;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     div#contact.main {
@@ -508,100 +595,4 @@ div.main h1 b {
         text-transform: uppercase;
     }
 
-}
-/* carroulse */
-
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  height: 80%;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-  height: 91%;
-  overflow: hidden;
-  width: 100%;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-#work > div:nth-child(4){
-    display: none;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 50px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
 }

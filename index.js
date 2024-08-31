@@ -7,6 +7,79 @@ function randNumFunc (){
     num.innerHTML = randNum;
 }
 randNumFunc();
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+
+
+    var slider = document.getElementById('slider');
+    var sliderUl = slider.querySelector('ul');
+    var slides = sliderUl.querySelectorAll('li');
+    var slideCount = slides.length;
+    var slideWidth = slides[0].offsetWidth;
+    var slideHeight = slides[0].offsetHeight;
+    var sliderUlWidth = slideCount * slideWidth;
+
+    slider.style.width = slideWidth + 'px';
+    slider.style.height = slideHeight + 'px';
+    
+    sliderUl.style.width = sliderUlWidth + 'px';
+    sliderUl.style.marginLeft = -slideWidth + 'px';
+
+    // Mueve el último slide al principio
+    sliderUl.insertBefore(slides[slideCount - 1], slides[0]);
+
+    function moveLeft() {
+        sliderUl.style.transition = 'left 0.2s';
+        sliderUl.style.left = slideWidth + 'px';
+
+        setTimeout(function() {
+            sliderUl.insertBefore(sliderUl.lastElementChild, sliderUl.firstElementChild);
+            sliderUl.style.transition = 'none';
+            sliderUl.style.left = '0';
+        }, 200);
+    }
+
+    function moveRight() {
+        sliderUl.style.transition = 'left 0.2s';
+        sliderUl.style.left = -slideWidth + 'px';
+
+        setTimeout(function() {
+            sliderUl.appendChild(sliderUl.firstElementChild);
+            sliderUl.style.transition = 'none';
+            sliderUl.style.left = '0';
+        }, 200);
+    }
+
+    var controlPrev = document.querySelector('a.control_prev');
+    var controlNext = document.querySelector('a.control_next');
+
+    controlPrev.addEventListener('click', function(e) {
+        e.preventDefault();
+        moveLeft();
+    });
+
+    controlNext.addEventListener('click', function(e) {
+        e.preventDefault();
+        moveRight();
+    });
+
+});
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
 var sended = 0;
 function GetData() {
     if (submit) {
@@ -78,32 +151,3 @@ function GetData() {
 GetData();
 
 
-//code for slideshow
-let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
