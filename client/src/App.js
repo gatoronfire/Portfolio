@@ -1,4 +1,6 @@
 import logo from './logo.svg';
+import river from './images/river.png'
+import mercantilandina from './images/mercantil.jpg'
 import './App.css';
 import React, { useEffect, useRef } from 'react';
 
@@ -105,8 +107,8 @@ function App() {
           <a href="#" className="control_next">→</a>
           <a href="#" className="control_prev">←</a>
           <ul ref={sliderUlRef}>
-            <li><a href="https://carpsada.com.ar/"><img src="https://picsum.photos/200" alt="" /></a></li>
-            <li><a href="https://mercantilandina.nettype.ar/"><img src="https://picsum.photos/200" alt="" /></a></li>
+            <li><a href="https://carpsada.com.ar/"><img src={river} alt="" /></a></li>
+            <li><a href="https://mercantilandina.nettype.ar/"><img src={mercantilandina} alt="" /></a></li>
             <li><a href="https://planetfitness.nettype.ar/Ejercicios"><img src="https://picsum.photos/200" alt="" /></a></li>
             <li><a href="https://recetasdecampo.nettype.ar/"><img src="https://picsum.photos/200" alt="" /></a></li>
           </ul>
