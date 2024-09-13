@@ -153,6 +153,7 @@ div.main h1 b {
         overflow: hidden;
         margin: 20px auto 0 auto;
         border-radius: 4px;
+        width: 500px;
       }
       
       #slider ul {
@@ -169,19 +170,21 @@ div.main h1 b {
         float: left;
         margin: 0;
         padding: 0;
-        width: 662px;
-        height: 295px;
+        border-radius: 20px;
+        width: 500px;
+        height: 270px;
         background: #ccc;
         text-align: center;
         line-height: 300px;
       }
       #slider ul li a img{
         position: absolute;
+        border-radius: 20px;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             width: 100%; /* Asegura que la imagen llene el ancho del contenedor */
-            height: auto; /* Mantiene la proporción de la imagen */
+            height: 100%; /* Mantiene la proporción de la imagen */
             max-height: 100%; 
       }
       
