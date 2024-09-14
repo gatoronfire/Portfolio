@@ -37,6 +37,85 @@ div.main h1 b {
     color: #ff436c;
 }
 
+/* slider */
+#slider {
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto 0 auto;
+    border-radius: 4px;
+    width: 500px;
+  }
+  
+  #slider ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    list-style: none;
+  }
+  
+  #slider ul li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    border-radius: 20px;
+    width: 500px;
+    height: 270px;
+    background: #ccc;
+    text-align: center;
+    line-height: 300px;
+  }
+  #slider ul li a img{
+    position: absolute;
+    border-radius: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%; /* Asegura que la imagen llene el ancho del contenedor */
+        height: 100%; /* Mantiene la proporción de la imagen */
+        max-height: 100%; 
+  }
+  
+  a.control_prev, a.control_next {
+    position: absolute;
+    top: 40%;
+    z-index: 999;
+    display: block;
+    padding: 4% 3%;
+    width: auto;
+    height: auto;
+    background: #2a2a2a;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  a.control_prev:hover, a.control_next:hover {
+    opacity: 1;
+    -webkit-transition: all 0.2s ease;
+  }
+  
+  a.control_prev {
+    border-radius: 0 2px 2px 0;
+  }
+  
+  a.control_next {
+    right: 0;
+    border-radius: 2px 0 0 2px;
+  }
+  
+  .slider_option {
+    position: relative;
+    margin: 10px auto;
+    width: 160px;
+    font-size: 18px;
+  }
+
 @media screen and (min-width:600px) {
     header {
         height: 5.353vw;
@@ -147,84 +226,7 @@ div.main h1 b {
 
 
 
-    /* slider */
-    #slider {
-        position: relative;
-        overflow: hidden;
-        margin: 20px auto 0 auto;
-        border-radius: 4px;
-        width: 500px;
-      }
-      
-      #slider ul {
-        position: relative;
-        margin: 0;
-        padding: 0;
-        height: 200px;
-        list-style: none;
-      }
-      
-      #slider ul li {
-        position: relative;
-        display: block;
-        float: left;
-        margin: 0;
-        padding: 0;
-        border-radius: 20px;
-        width: 500px;
-        height: 270px;
-        background: #ccc;
-        text-align: center;
-        line-height: 300px;
-      }
-      #slider ul li a img{
-        position: absolute;
-        border-radius: 20px;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%; /* Asegura que la imagen llene el ancho del contenedor */
-            height: 100%; /* Mantiene la proporción de la imagen */
-            max-height: 100%; 
-      }
-      
-      a.control_prev, a.control_next {
-        position: absolute;
-        top: 40%;
-        z-index: 999;
-        display: block;
-        padding: 4% 3%;
-        width: auto;
-        height: auto;
-        background: #2a2a2a;
-        color: #fff;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 18px;
-        opacity: 0.8;
-        cursor: pointer;
-      }
-      
-      a.control_prev:hover, a.control_next:hover {
-        opacity: 1;
-        -webkit-transition: all 0.2s ease;
-      }
-      
-      a.control_prev {
-        border-radius: 0 2px 2px 0;
-      }
-      
-      a.control_next {
-        right: 0;
-        border-radius: 2px 0 0 2px;
-      }
-      
-      .slider_option {
-        position: relative;
-        margin: 10px auto;
-        width: 160px;
-        font-size: 18px;
-      }
+    
 
 
     div#contact {
@@ -597,5 +599,84 @@ div.main h1 b {
         font-size: 2rem;
         text-transform: uppercase;
     }
+
+    /* slider */
+#slider {
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto 0 auto;
+    border-radius: 4px;
+    width: 500px;
+  }
+  
+  #slider ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    list-style: none;
+  }
+  
+  #slider ul li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    border-radius: 20px;
+    width: 500px;
+    height: 270px;
+    background: #ccc;
+    text-align: center;
+    line-height: 300px;
+  }
+  #slider ul li a img{
+    position: absolute;
+    border-radius: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%; /* Asegura que la imagen llene el ancho del contenedor */
+        height: 100%; /* Mantiene la proporción de la imagen */
+        max-height: 100%; 
+  }
+  
+  a.control_prev, a.control_next {
+    position: absolute;
+    top: 40%;
+    z-index: 999;
+    display: block;
+    padding: 4% 3%;
+    width: auto;
+    height: auto;
+    background: #2a2a2a;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  a.control_prev:hover, a.control_next:hover {
+    opacity: 1;
+    -webkit-transition: all 0.2s ease;
+  }
+  
+  a.control_prev {
+    border-radius: 0 2px 2px 0;
+  }
+  
+  a.control_next {
+    right: 0;
+    border-radius: 2px 0 0 2px;
+  }
+  
+  .slider_option {
+    position: relative;
+    margin: 10px auto;
+    width: 160px;
+    font-size: 18px;
+  }
 
 }

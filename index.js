@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var slideHeight = slides[0].offsetHeight;
     var sliderUlWidth = slideCount * slideWidth;
 
-    slider.style.width = 500 + 'px';
+    slider.style.width = slideWidth;
     slider.style.height = slideHeight + 'px';
     
     sliderUl.style.width = sliderUlWidth + 'px';
