@@ -21,11 +21,11 @@ document.addEventListener('DOMContentLoaded', function() {
     var slideHeight = slides[0].offsetHeight;
     var sliderUlWidth = slideCount * slideWidth;
 
-    slider.style.width = slideWidth + "px";
+    slider.style.width = 85 + "vw";
     slider.style.height = slideHeight + 'px';
     
-    sliderUl.style.width = sliderUlWidth + 'px';
-    sliderUl.style.marginLeft = -slideWidth + 'px';
+    sliderUl.style.width = 85 + 'vw';
+    // sliderUl.style.marginLeft = -85 + 'vw';
 
     // Mueve el último slide al principio
     sliderUl.insertBefore(slides[slideCount - 1], slides[0]);
