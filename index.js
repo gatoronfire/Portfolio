@@ -12,7 +12,7 @@ randNumFunc();
 
 document.addEventListener('DOMContentLoaded', function() {
 
-
+    var work = document.getElementById('work');
     var slider = document.getElementById('slider');
     var sliderUl = slider.querySelector('ul');
     var slides = sliderUl.querySelectorAll('li');
@@ -21,12 +21,21 @@ document.addEventListener('DOMContentLoaded', function() {
     var slideHeight = slides[0].offsetHeight;
     var sliderUlWidth = slideCount * slideWidth;
 
-    slider.style.width = 85 + "vw";
-    slider.style.height = slideHeight + 'px';
+    if(work.offsetWidth < 600){
+        slider.style.width = 85 + "vw";
+        slider.style.height = slideHeight + 'px';
     
-    sliderUl.style.width = 85 + 'vw';
-    // sliderUl.style.marginLeft = -85 + 'vw';
+        sliderUl.style.width = 85 + 'vw';
 
+    }else{
+        slider.style.width = slideWidth + "px";
+        slider.style.height = slideHeight + 'px';
+    
+        sliderUl.style.width = slideWidth + 'px';
+
+    }
+
+    
     // Mueve el último slide al principio
     sliderUl.insertBefore(slides[slideCount - 1], slides[0]);
 
